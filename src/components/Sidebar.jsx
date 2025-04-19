@@ -2,16 +2,16 @@ import { ChevronFirst, ChevronLast, MoreVertical } from "lucide-react";
 import { createContext, useContext, useState } from "react";
 
 const SidebarContext = createContext();
-export default function Sidebar({ children }) {
+export default function Sidebar({ children, name }) {
   const [expanded, setExpanded] = useState(true);
   return (
     <aside className="h-screen">
-      <nav className="h-full flex flex-col bg-white shadow-sm rounded-md">
+      <nav className="h-full flex flex-col bg-white shadow-sm rounded-md ml-1">
         <div className="p-4 pb-2 flex justify-between items-center">
           <img
             src="images/logo.png"
             className={`overflow-hidden transition-all ${
-              expanded ? "w-11" : "w-0"
+              expanded ? "w-30" : "w-0"
             }`}
           />
 
@@ -44,7 +44,7 @@ export default function Sidebar({ children }) {
             `}
           >
             <div className="leading-4">
-              <h4 className="font-semibold">John Doe</h4>
+              <h4 className="font-semibold">{name}</h4>
               <span className="text-xs text-gray-600">johndoe@gmail.com</span>
             </div>
             <MoreVertical size={20} />
@@ -65,7 +65,7 @@ export function SidebarItem({ icon, text, active, alert }) {
       trasintions-colors group
       ${
         active
-          ? "bg-gradient-to-tr from-indigo-200 to-indigo-100 text-indigo-800"
+          ? "bg-gradient-to-tr from-slate-200 to-slate-100 text-slate-900"
           : "hover:bg-indigo-50 text-gray-600"
       }
       
@@ -73,7 +73,7 @@ export function SidebarItem({ icon, text, active, alert }) {
     >
       {icon}
       <span
-        className={`overflow-hidden transition-all
+        className={`overflow-hidden transition-all 
         ${expanded ? "w-52 ml-3" : "w-0"}
         
         `}

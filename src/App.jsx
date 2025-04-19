@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Sidebar, { SidebarItem } from "./components/Sidebar";
+import Article from "./components/Article";
 import {
   LifeBuoy,
   Receipt,
@@ -11,25 +12,28 @@ import {
   Settings,
 } from "lucide-react";
 
+const name = "John Doe"
+
 function App() {
   return (
     <div className="bg-slate-500 w-screen h-screen flex ">
-      <Sidebar>
+      <Sidebar name={name}>
         <SidebarItem
           icon={<LayoutDashboard size={20} />}
           text="Dashboard"
-          alert
+          //alert
+          active
         />
 
-        <SidebarItem icon={<BarChart3 size={20} />} text="Statistics" active />
-        <SidebarItem icon={<UserCircle size={20}/>} text="Users" />
-        <SidebarItem icon={<Boxes size={20}/>} text="Iventory" />
-        <SidebarItem icon={<Package size={20}/>} text="Orders" alert/>
-        <SidebarItem icon={<Receipt size={20}/>} text="Billings" />
-        <hr className="my-3"/>
-        <SidebarItem icon={<Settings size={20}/>} text="Settings"/>
-        <SidebarItem icon={<LifeBuoy size={20}/>} text="Help" />
+        <SidebarItem icon={<BarChart3 size={20} />} text="Statistics"  />
+        <SidebarItem icon={<UserCircle size={20} />} text="Users" alert />
+        <hr className="my-3" />
+        <SidebarItem icon={<Settings size={20} />} text="Settings" />
       </Sidebar>
+
+      <Article name={name}></Article>
+
+      
     </div>
   );
 }
