@@ -6,7 +6,7 @@ export default function Sidebar({ children, name }) {
   const [expanded, setExpanded] = useState(true);
   return (
     <aside className="h-screen">
-      <nav className="h-full flex flex-col bg-white shadow-sm rounded-md ml-1">
+      <nav className="h-full flex flex-col bg-white shadow-sm rounded-md m-1">
         <div className="p-4 pb-2 flex justify-between items-center">
           <img
             src="images/logo.png"

@@ -1,8 +1,8 @@
 import Grid from "./Grid";
-export default function Article({name}) {
+export default function Article({ name }) {
   return (
-    <div className="bg-white w-screen rounded-md m-2.5 font-size">
-      <div className="border-b-1 flex m-2">
+    <div className="bg-white rounded-md m-1 font-size ">
+      <div className="flex items-center mb-6">
         <div
           className="bg-gradient-to-tr h-9  
        from-slate-200 to-slate-100 text-slate-900 font-medium
@@ -12,8 +12,10 @@ export default function Article({name}) {
           <h1>{`Hello, ${name}!🚀`}</h1>
         </div>
       </div>
-      <Grid/>
+
+      <div className="space-y">
+        <Grid />
+      </div>
     </div>
-    
   );
 }

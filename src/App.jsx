@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Sidebar, { SidebarItem } from "./components/Sidebar";
 import Article from "./components/Article";
+
 import {
   LifeBuoy,
   Receipt,
@@ -12,11 +13,11 @@ import {
   Settings,
 } from "lucide-react";
 
-const name = "John Doe"
+const name = "John Doe";
 
 function App() {
   return (
-    <div className="bg-slate-500 w-screen h-screen flex ">
+    <div className="bg-slate-500 min-h-sc flex ">
       <Sidebar name={name}>
         <SidebarItem
           icon={<LayoutDashboard size={20} />}
@@ -25,15 +26,14 @@ function App() {
           active
         />
 
-        <SidebarItem icon={<BarChart3 size={20} />} text="Statistics"  />
+        <SidebarItem icon={<BarChart3 size={20} />} text="Statistics" />
         <SidebarItem icon={<UserCircle size={20} />} text="Users" alert />
         <hr className="my-3" />
         <SidebarItem icon={<Settings size={20} />} text="Settings" />
       </Sidebar>
-
-      <Article name={name}></Article>
-
-      
+      <main className="w-full h-full overflow-auto">  {/* Dá uma olhada nisso */}
+        <Article name={name} />
+      </main>
     </div>
   );
 }

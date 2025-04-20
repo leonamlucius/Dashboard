@@ -6,7 +6,7 @@ export default function Grid() {
       className="px-4 grid gap-3
         grid-cols-12"
     >
-      <StatsCards/>
+        <StatsCards/>
       <RecentTransctions/>
     </div>
   );
