@@ -1,4 +1,5 @@
 import StatsCards from "./StatsCards";
+import RecentTransctions from "./RecentTransctions";
 export default function Grid() {
   return (
     <div
@@ -6,6 +7,7 @@ export default function Grid() {
         grid-cols-12"
     >
       <StatsCards/>
+      <RecentTransctions/>
     </div>
   );
 }

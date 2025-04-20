@@ -41,8 +41,10 @@ const Cards = ({ title, value, pillText, trend, period }) => {
             ${trend === "up"? "bg-green-100 text-green-700":"bg-red-100 text-red-700"}`}>
                 {trend === "up"? <FaArrowTrendUp />: <FaArrowTrendDown />}
                 {pillText}
-            </span>
+           </span>
       </div>
+      
+      <p className="text-xs text-stone-500">{period}</p>
     </div>
   );
 };
