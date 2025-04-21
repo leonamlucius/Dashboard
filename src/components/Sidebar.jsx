@@ -1,7 +1,10 @@
 import { ChevronFirst, ChevronLast, MoreVertical } from "lucide-react";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const SidebarContext = createContext();
+const divRef = (useRef < HTMLDivElement) | (null > null);
+
 export default function Sidebar({ children, name }) {
   const [expanded, setExpanded] = useState(true);
   return (
@@ -56,22 +59,29 @@ export default function Sidebar({ children, name }) {
 }
 
 export function SidebarItem({ icon, text, active, alert }) {
+  const [side, Setside] = useState("G");
   const { expanded } = useContext(SidebarContext);
+ 
   return (
-    <li
+    <Link to="/blog"
       className={`
       relative flex items-center py-2 px-3 my-1
       font-medium rounded-md cursor-pointer
-      trasintions-colors group
+      trasintions-colors group "
       ${
         active
           ? "bg-gradient-to-tr from-slate-200 to-slate-100 text-slate-900"
           : "hover:bg-indigo-50 text-gray-600"
       }
       
+      
     `}
+      onClick={()=> {
+        ;
+      }}
+      
     >
-      {icon}
+      {icon}{console.log(side)}
       <span
         className={`overflow-hidden transition-all 
         ${expanded ? "w-52 ml-3" : "w-0"}
@@ -100,6 +110,6 @@ export function SidebarItem({ icon, text, active, alert }) {
           {text}
         </div>
       )}
-    </li>
+    </Link>
   );
 }

@@ -1,10 +1,10 @@
 import { FaDollarSign } from "react-icons/fa";
-export default function RecentTransctions() {
+export default function OldestTransactions() {
   return (
     <div className="col-span-12 p-4 rounded border border-stone-300">
-      <div className="mb-4 flex items-center justify-between sticky top-0">
+      <div className="mb-4 flex items-center justify-between">
         <h3 className="flex items-center gap-1.5 font-medium">
-          <FaDollarSign /> Recent Transactions
+          <FaDollarSign /> Oldest Transactions
         </h3>
       </div>
       <div className="overflow-y-auto">
@@ -33,7 +33,6 @@ export default function RecentTransctions() {
               price="$15.25"
               order={3}
             />
-
             <TableRow
               cusId="#2392"
               sku="234238"
@@ -41,7 +40,6 @@ export default function RecentTransctions() {
               price="$7.99"
               order={4}
             />
-
             <TableRow
               cusId="#2393"
               sku="234239"
@@ -49,7 +47,6 @@ export default function RecentTransctions() {
               price="$22.40"
               order={5}
             />
-
             <TableRow
               cusId="#2394"
               sku="234240"
@@ -57,7 +54,6 @@ export default function RecentTransctions() {
               price="$18.75"
               order={6}
             />
-
             <TableRow
               cusId="#2395"
               sku="234241"
@@ -65,7 +61,6 @@ export default function RecentTransctions() {
               price="$5.25"
               order={7}
             />
-
             <TableRow
               cusId="#2396"
               sku="234242"
@@ -73,7 +68,6 @@ export default function RecentTransctions() {
               price="$30.00"
               order={8}
             />
-
             <TableRow
               cusId="#2397"
               sku="234243"
@@ -81,7 +75,6 @@ export default function RecentTransctions() {
               price="$14.99"
               order={9}
             />
-
             <TableRow
               cusId="#2398"
               sku="234244"
@@ -96,7 +89,6 @@ export default function RecentTransctions() {
               price="$8.90"
               order={11}
             />
-
             <TableRow
               cusId="#2400"
               sku="234246"
@@ -104,7 +96,6 @@ export default function RecentTransctions() {
               price="$16.20"
               order={12}
             />
-
             <TableRow
               cusId="#2401"
               sku="234247"
@@ -112,13 +103,47 @@ export default function RecentTransctions() {
               price="$11.30"
               order={13}
             />
-
             <TableRow
               cusId="#2402"
               sku="234248"
               date="Aug 15th"
               price="$24.99"
               order={14}
+            />
+            <TableRow
+              cusId="#2403"
+              sku="234249"
+              date="Aug 16th"
+              price="$19.99"
+              order={15}
+            />
+            <TableRow
+              cusId="#2404"
+              sku="234250"
+              date="Aug 17th"
+              price="$13.45"
+              order={16}
+            />
+            <TableRow
+              cusId="#2405"
+              sku="234251"
+              date="Aug 18th"
+              price="$10.00"
+              order={17}
+            />
+            <TableRow
+              cusId="#2406"
+              sku="234252"
+              date="Aug 19th"
+              price="$28.75"
+              order={18}
+            />
+            <TableRow
+              cusId="#2407"
+              sku="234253"
+              date="Aug 20th"
+              price="$6.50"
+              order={19}
             />
           </tbody>
         </table>
