@@ -8,6 +8,7 @@ export default function Grid() {
     >
         <StatsCards/>
       <RecentTransctions/>
+      <RecentTransctions/>
     </div>
   );
 }

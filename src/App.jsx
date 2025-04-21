@@ -17,7 +17,7 @@ const name = "John Doe";
 
 function App() {
   return (
-    <div className="bg-slate-500 min-h-sc flex ">
+    <div className="bg-slate-500 flex h-lvh">
       <Sidebar name={name}>
         <SidebarItem
           icon={<LayoutDashboard size={20} />}
@@ -31,7 +31,8 @@ function App() {
         <hr className="my-3" />
         <SidebarItem icon={<Settings size={20} />} text="Settings" />
       </Sidebar>
-      <main className="w-full h-full overflow-auto">  {/* Dá uma olhada nisso */}
+      <main className="w-screen overflow-auto">  {/* Dá uma olhada nisso */}
+      
         <Article name={name} />
       </main>
     </div>

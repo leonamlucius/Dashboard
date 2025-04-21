@@ -1,7 +1,7 @@
 import Grid from "./Grid";
 export default function Article({ name }) {
   return (
-    <div className="bg-white rounded-md m-1 font-size ">
+    <div className="bg-white rounded-md font-size ms-1 me-1  ">
       <div className="flex items-center mb-6">
         <div
           className="bg-gradient-to-tr h-9  
@@ -13,7 +13,7 @@ export default function Article({ name }) {
         </div>
       </div>
 
-      <div className="space-y">
+      <div className="space-y-6">
         <Grid />
       </div>
     </div>
