@@ -12,7 +12,7 @@ export default function Sidebar({ children, name }) {
       <nav className="h-full flex flex-col bg-white shadow-sm rounded-md ms-1 me-1 ">
         <div className="p-4 pb-2 flex justify-between items-center">
           <img
-            src="src/assets/logo.png"
+            src="./Dashboard/logo.png"
             className={`overflow-hidden transition-all ${
               expanded ? "w-23 md:w-30" : "w-0"
             }`}
