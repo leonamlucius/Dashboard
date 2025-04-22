@@ -5,6 +5,7 @@ import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
 import StatisticsPages from "./pages/StatisticsPage.jsx";
 import UsersPage from "./pages/UsersPage.jsx";
+import SettingsPage from "./pages/SettingsPage.jsx";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "Users",
     element: <UsersPage/>,
+  },
+  {
+    path: "Settings",
+    element: <SettingsPage/>,
   },
 ])
 

@@ -1,21 +1,22 @@
 import Grid from "./Grid";
 import Statistics from "./Statistics";
 import Users from "./Users";
+import Settings from "./Settings";
 
-function render(isSelect){
-
+function render(isSelect) {
   switch (isSelect) {
     case 1:
-      return <Grid />
+      return <Grid />;
     case 2:
-      return <Statistics/>
+      return <Statistics />;
     case 3:
-      return <Users/>
-      
+      return <Users />;
+    case 4:
+      return <Settings/>;
   }
-};
+}
 
-export default function Article({ name, isSelect}) {
+export default function Article({ name, isSelect }) {
   return (
     <div className="bg-white rounded-md ms-1 me-1  ">
       <div className="flex items-center mb-6">
@@ -26,26 +27,9 @@ export default function Article({ name, isSelect}) {
         >
           <h1>{`Hello, ${name}!🚀`}</h1>
         </div>
-      </div >
+      </div>
 
       {render(isSelect)}
-
-      
-      {/* {isSelect?(
-        <div className="space-y-6">
-          <Statistics/>
-      </div>
-      ):(
-        <div className="space-y-6">
-          <Grid />
-      </div>
-
-      )} */}
-
-      
-
-
     </div>
   );
 }
-

@@ -25,15 +25,15 @@ export default function StaticsPages() {
           
         />
 
-        <SidebarItem icon={<BarChart3 size={20} />} text="Statistics" active/>
+        <SidebarItem icon={<BarChart3 size={20} />} text="Statistics" />
         <SidebarItem icon={<UserCircle size={20} />} text="Users" alert />
         <hr className="my-3" />
-        <SidebarItem icon={<Settings size={20} />} text="Settings" />
+        <SidebarItem icon={<Settings size={20} />} text="Settings" active />
       </Sidebar>
       <main className="w-screen overflow-auto">
         {" "}
         {/* Dá uma olhada nisso */}
-        <Article name={name} isSelect={2} />
+        <Article name={name} isSelect={4} />
       </main>
     </div>
   );

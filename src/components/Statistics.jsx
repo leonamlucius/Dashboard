@@ -58,65 +58,69 @@ const data = [
 
 const Statistcs = () => {
   return (
-    <div className="p-4 col-span-4 rounded border border-stone-300">
-      <div className="mb-4 flex items-center justify-between">
-        <h3 className="flex items-center gap-1.5 font-medium">
-          <BsGraphUpArrow /> Statistics
-        </h3>
-      </div>
+    <div
+      className="px-4 gap-3
+    grid-cols-12"
+    >
+      <div className="p-4 col-span-4 rounded border border-stone-300">
+        <div className="mb-4 flex items-center justify-between">
+          <h3 className="flex items-center gap-1.5 font-medium">
+            <BsGraphUpArrow /> Statistics
+          </h3>
+        </div>
 
-      <div className="h-100 x-4">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart
-            width={500}
-            height={300}
-            data={data}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
-          >
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
-            <YAxis />
-            <Tooltip />
-            <Legend />
-            <Line
-              type="monotone"
-              dataKey="pv"
-              stroke="#8884d8"
-              activeDot={{ r: 8 }}
-            />
-            <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
-          </LineChart>
-        </ResponsiveContainer>
-      </div>
-      <div className="h-100 x-4">
-      <ResponsiveContainer width="100%" height="100%">
-        <LineChart
-          layout="vertical"
-          width={500}
-          height={300}
-          data={data}
-          margin={{
-            top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis type="number" />
-          <YAxis dataKey="name" type="category" />
-          <Tooltip />
-          <Legend />
-          <Line dataKey="pv" stroke="#8884d8" />
-          <Line dataKey="uv" stroke="#82ca9d" />
-        </LineChart>
-      </ResponsiveContainer>
-
+        <div className="h-100 x-4">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart
+              width={500}
+              height={300}
+              data={data}
+              margin={{
+                top: 5,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Line
+                type="monotone"
+                dataKey="pv"
+                stroke="#8884d8"
+                activeDot={{ r: 8 }}
+              />
+              <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+        <div className="h-100 x-4">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart
+              layout="vertical"
+              width={500}
+              height={300}
+              data={data}
+              margin={{
+                top: 20,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis type="number" />
+              <YAxis dataKey="name" type="category" />
+              <Tooltip />
+              <Legend />
+              <Line dataKey="pv" stroke="#8884d8" />
+              <Line dataKey="uv" stroke="#82ca9d" />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </div>
   );

@@ -20,11 +20,11 @@ const UsersPage = () => {
           icon={<LayoutDashboard size={20} />}
           text="Dashboard"
           //alert
-          active
+          
         />
 
         <SidebarItem icon={<BarChart3 size={20} />} text="Statistics" />
-        <SidebarItem icon={<UserCircle size={20} />} text="Users" alert />
+        <SidebarItem icon={<UserCircle size={20} />} text="Users" alert active />
         <hr className="my-3" />
         <SidebarItem icon={<Settings size={20} />} text="Settings" />
       </Sidebar>
