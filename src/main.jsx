@@ -3,11 +3,15 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
-import StatisticsPages from "./pages/StatisticsPages.jsx";
+import StatisticsPages from "./pages/StatisticsPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/Dashboard" ,
+    element: <App/>,
+  },
+  {
+    path: "/" ,
     element: <App/>,
   },
   {

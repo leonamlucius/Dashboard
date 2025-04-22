@@ -14,7 +14,7 @@ import Article from "../components/Article";
 
 const name = "John Doe";
 
-export default function BlogPages() {
+export default function StaticsPages() {
   return (
     <div className="bg-slate-500 flex h-lvh smooth">
       <Sidebar name={name}>

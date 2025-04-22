@@ -1,4 +1,5 @@
 import Grid from "./Grid";
+import Statistics from "./Statistics";
 export default function Article({ name, isSelect}) {
   return (
     <div className="bg-white rounded-md ms-1 me-1  ">
@@ -14,7 +15,7 @@ export default function Article({ name, isSelect}) {
 
       {isSelect?(
         <div className="space-y-6">
-        teste
+          <Statistics/>
       </div>
       ):(
         <div className="space-y-6">
