@@ -12,9 +12,9 @@ export default function Sidebar({ children, name }) {
       <nav className="h-full flex flex-col bg-white shadow-sm rounded-md ms-1 me-1 ">
         <div className="p-4 pb-2 flex justify-between items-center">
           <img
-            src="images/logo.png"
+            src="src/assets/logo.png"
             className={`overflow-hidden transition-all ${
-              expanded ? "w-30" : "w-0"
+              expanded ? "w-23 md:w-30" : "w-0"
             }`}
           />
 
@@ -40,7 +40,6 @@ export default function Sidebar({ children, name }) {
           <div
             className={`
             flex justify-between items-center
-           
             overflow-hidden transition-all ${expanded ? "w-52 ml-3" : "w-0"}
           
 
@@ -79,8 +78,8 @@ export function SidebarItem({ icon, text, active, alert }) {
     >
       {icon}
       <span
-        className={`overflow-hidden transition-all 
-        ${expanded ? "w-52 ml-3" : "w-0"}
+        className={`overflow-hidden transition-all
+        ${expanded ? "w-22 md:w-52 ml-3" : "w-0"}
         
         `}
       >

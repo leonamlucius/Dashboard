@@ -5,8 +5,10 @@ import { FaPerson } from "react-icons/fa6";
 import { FaClock } from "react-icons/fa";
 const Users = () => {
   return (
-    <div  className="px-4 gap-3
-    grid-cols-12">
+    <div
+      className="px-4 gap-3
+    grid-cols-12"
+    >
       <div className="p-4 col-span-4 rounded border border-stone-300">
         <div className="mb-4 flex items-center justify-between">
           <h3 className="flex items-center gap-1.5 font-medium">
@@ -14,19 +16,19 @@ const Users = () => {
           </h3>
         </div>
 
-        <div className="flex h-50 p-3">
+        <div className="flex p-3 ">
           <img
             src="https://ui-avatars.com/api/?size=512"
             alt=""
             className="w-30 h-30 rounded-md"
           />
 
-          <div className="ms-5">
-            <h3 className="flex items-center gap-1.5 font-medium">
+          <div className="ms-5 h-10 w-20 items-center md:w-20">
+            <h3 className="md:flex items-center md:gap-1.5 font-medium b md:w-40 overflow-x-hidden text-ellipsis">
               <FaPerson />
               Name: John Dow
             </h3>
-            <h3 className="flex items-center gap-1.5 font-medium">
+            <h3 className="md:flex items-center gap-1.5 font-medium md:w-40 overflow-x-hidden text-ellipsis">
               <MdEmail />
               Email: johndoe@gmail.com
             </h3>
@@ -46,7 +48,7 @@ const Users = () => {
             className="w-10 h-10 rounded-md"
           />
 
-          <div className="ms-5">
+          <div className="ms-5 overflow-x-hidden text-ellipsis">
             <h3 className="flex items-center gap-1.5 font-medium">
               <FaPerson />
               Name: John Dow
@@ -65,7 +67,7 @@ const Users = () => {
             className="w-10 h-10 rounded-md"
           />
 
-          <div className="ms-5">
+          <div className="ms-5 overflow-x-hidden text-ellipsis">
             <h3 className="flex items-center gap-1.5 font-medium">
               <FaPerson />
               Name: John Dow
@@ -84,7 +86,7 @@ const Users = () => {
             className="w-10 h-10 rounded-md"
           />
 
-          <div className="ms-5">
+          <div className="ms-5 overflow-x-hidden text-ellipsis">
             <h3 className="flex items-center gap-1.5 font-medium">
               <FaPerson />
               Name: John Dow
@@ -103,7 +105,7 @@ const Users = () => {
             className="w-10 h-10 rounded-md"
           />
 
-          <div className="ms-5">
+          <div className="ms-5 overflow-x-hidden text-ellipsis">
             <h3 className="flex items-center gap-1.5 font-medium">
               <FaPerson />
               Name: John Dow
@@ -122,7 +124,7 @@ const Users = () => {
             className="w-10 h-10 rounded-md"
           />
 
-          <div className="ms-5">
+          <div className="ms-5 overflow-x-hidden text-ellipsis">
             <h3 className="flex items-center gap-1.5 font-medium">
               <FaPerson />
               Name: John Dow
@@ -141,7 +143,7 @@ const Users = () => {
             className="w-10 h-10 rounded-md"
           />
 
-          <div className="ms-5">
+          <div className="ms-5 overflow-x-hidden text-ellipsis">
             <h3 className="flex items-center gap-1.5 font-medium">
               <FaPerson />
               Name: John Dow
@@ -153,14 +155,14 @@ const Users = () => {
           </div>
         </div>
 
-        <div className="flex h-20 p-3">
+        <div className="flex h-20 p-3 b">
           <img
             src="https://ui-avatars.com/api/?background=E6C7E6"
             alt=""
             className="w-10 h-10 rounded-md"
           />
 
-          <div className="ms-5">
+          <div className="ms-5 overflow-x-hidden text-ellipsis">
             <h3 className="flex items-center gap-1.5 font-medium">
               <FaPerson />
               Name: John Dow

@@ -18,12 +18,12 @@ function render(isSelect) {
 
 export default function Article({ name, isSelect }) {
   return (
-    <div className="bg-white rounded-md ms-1 me-1  ">
-      <div className="flex items-center mb-6">
+    <div className="bg-white rounded-md ms-1 me-1">
+      <div className="flex items-center md:ml-4">
         <div
           className="bg-gradient-to-tr h-9  
        from-slate-200 to-slate-100 text-slate-900 font-medium
-       rounded-md mt-2 mx-4"
+       rounded-md p-1 mb-1.5 mt-1.5 "
         >
           <h1>{`Hello, ${name}!🚀`}</h1>
         </div>
