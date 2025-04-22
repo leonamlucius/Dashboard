@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider, Route } from "react-router-dom";
-import BlogPages from "./pages/BlogPages.jsx";
+import StatisticsPages from "./pages/StatisticsPages.jsx";
 
 const router = createBrowserRouter([
   {
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <App/>,
   },
   {
-    path: "blog",
-    element: <BlogPages/>,
+    path: "Statistics",
+    element: <StatisticsPages/>,
   },
 ])
 

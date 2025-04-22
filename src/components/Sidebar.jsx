@@ -59,15 +59,15 @@ export default function Sidebar({ children, name }) {
 }
 
 export function SidebarItem({ icon, text, active, alert }) {
-  const [side, Setside] = useState("G");
   const { expanded } = useContext(SidebarContext);
- 
+
   return (
-    <Link to="/blog"
+    <Link
+      to={`/${text}`}
       className={`
       relative flex items-center py-2 px-3 my-1
       font-medium rounded-md cursor-pointer
-      trasintions-colors group "
+      trasintion-colors group "
       ${
         active
           ? "bg-gradient-to-tr from-slate-200 to-slate-100 text-slate-900"
@@ -76,12 +76,8 @@ export function SidebarItem({ icon, text, active, alert }) {
       
       
     `}
-      onClick={()=> {
-        ;
-      }}
-      
     >
-      {icon}{console.log(side)}
+      {icon}
       <span
         className={`overflow-hidden transition-all 
         ${expanded ? "w-52 ml-3" : "w-0"}
