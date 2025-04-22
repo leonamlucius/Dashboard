@@ -2,6 +2,7 @@ import { ChevronFirst, ChevronLast, MoreVertical } from "lucide-react";
 import { createContext, useContext, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 
+
 const SidebarContext = createContext();
 const divRef = (useRef < HTMLDivElement) | (null > null);
 
@@ -12,7 +13,7 @@ export default function Sidebar({ children, name }) {
       <nav className="h-full flex flex-col bg-white shadow-sm rounded-md ms-1 me-1 ">
         <div className="p-4 pb-2 flex justify-between items-center">
           <img
-            src="./Dashboard/logo.png"
+            src="./src/assets/logo.png"
             className={`overflow-hidden transition-all ${
               expanded ? "w-23 md:w-30" : "w-0"
             }`}
