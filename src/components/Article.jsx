@@ -1,5 +1,20 @@
 import Grid from "./Grid";
 import Statistics from "./Statistics";
+import Users from "./Users";
+
+function render(isSelect){
+
+  switch (isSelect) {
+    case 1:
+      return <Grid />
+    case 2:
+      return <Statistics/>
+    case 3:
+      return <Users/>
+      
+  }
+};
+
 export default function Article({ name, isSelect}) {
   return (
     <div className="bg-white rounded-md ms-1 me-1  ">
@@ -11,9 +26,12 @@ export default function Article({ name, isSelect}) {
         >
           <h1>{`Hello, ${name}!🚀`}</h1>
         </div>
-      </div>
+      </div >
 
-      {isSelect?(
+      {render(isSelect)}
+
+      
+      {/* {isSelect?(
         <div className="space-y-6">
           <Statistics/>
       </div>
@@ -22,7 +40,7 @@ export default function Article({ name, isSelect}) {
           <Grid />
       </div>
 
-      )}
+      )} */}
 
       
 

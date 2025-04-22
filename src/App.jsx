@@ -33,7 +33,7 @@ function App() {
       </Sidebar>
       <main className="w-screen overflow-auto">  {/* Dá uma olhada nisso */}
       
-        <Article name={name}> </Article>
+        <Article name={name} isSelect={1}>  </Article>
       </main>
     </div>
   );

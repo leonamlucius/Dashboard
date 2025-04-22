@@ -1,5 +1,6 @@
 import React from "react";
 import Sidebar, { SidebarItem } from "../components/Sidebar";
+import Article from "../components/Article";
 import {
   LifeBuoy,
   Receipt,
@@ -10,11 +11,8 @@ import {
   LayoutDashboard,
   Settings,
 } from "lucide-react";
-import Article from "../components/Article";
-
 const name = "John Doe";
-
-export default function StaticsPages() {
+const UsersPage = () => {
   return (
     <div className="bg-slate-500 flex h-lvh smooth">
       <Sidebar name={name}>
@@ -33,8 +31,10 @@ export default function StaticsPages() {
       <main className="w-screen overflow-auto">
         {" "}
         {/* Dá uma olhada nisso */}
-        <Article name={name} isSelect={2} />
+        <Article name={name} isSelect={3} />
       </main>
     </div>
   );
-}
+};
+
+export default UsersPage;
